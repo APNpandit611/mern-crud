@@ -24,7 +24,7 @@ const CreateProduct = () => {
         setLoading(true);
         try {
             const res = await axios.post(
-                "https://mern-crud-backend-serx.onrender.com/product/create",
+                "https://mern-crud-backend-n7h2.onrender.com/product/create",
                 input,
                 {
                     headers: {

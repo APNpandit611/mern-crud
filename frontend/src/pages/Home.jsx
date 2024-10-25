@@ -15,7 +15,7 @@ const Home = () => {
             setLoading(true);
             try {
                 const res = await axios.get(
-                    "https://mern-crud-backend-serx.onrender.com/product/get/all"
+                    "https://mern-crud-backend-n7h2.onrender.com/product/get/all"
                 );
                 setProducts(res.data.product);
             } catch (error) {

@@ -20,7 +20,7 @@ const EditProduct = () => {
             setLoading(true);
             try {
                 const res = await axios.get(
-                    `https://mern-crud-backend-serx.onrender.com/product/get/${id}`
+                    `https://mern-crud-backend-n7h2.onrender.com/product/get/${id}`
                 );
                 setInput({
                     name: res.data.product.name,
@@ -45,7 +45,7 @@ const EditProduct = () => {
         setLoading(true);
         try {
             const res = await axios.put(
-                `https://mern-crud-backend-serx.onrender.com/product/update/${id}`,
+                `https://mern-crud-backend-n7h2.onrender.com/product/update/${id}`,
                 input,
                 {
                     headers: {

@@ -29,7 +29,7 @@ const DeleteProduct = () => {
         try {
             console.log(id)
             await axios.delete(
-                `https://mern-crud-backend-serx.onrender.com/product/delete/${id}`
+                `https://mern-crud-backend-n7h2.onrender.com/product/delete/${id}`
             );
             navigate("/")
             setLoading(false);
