@@ -20,7 +20,7 @@ const EditProduct = () => {
             setLoading(true);
             try {
                 const res = await axios.get(
-                    `http://localhost:3005/product/get/${id}`
+                    `https://mern-crud-jprx.onrender.com/product/get/${id}`
                 );
                 setInput({
                     name: res.data.product.name,

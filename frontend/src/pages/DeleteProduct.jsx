@@ -14,7 +14,7 @@ const DeleteProduct = () => {
         const fetchProduct = async () => {
             setLoading(true)
             try {
-                const res = await axios.get(`http://localhost:3005/product/get/${id}`)
+                const res = await axios.get(`https://mern-crud-jprx.onrender.com/product/get/${id}`)
                 setProduct(res.data.product)
                 setLoading(false)
             } catch (error) {
@@ -29,7 +29,7 @@ const DeleteProduct = () => {
         try {
             console.log(id)
             await axios.delete(
-                `http://localhost:3005/product/delete/${id}`
+                `https://mern-crud-jprx.onrender.com/product/delete/${id}`
             );
             navigate("/")
             setLoading(false);

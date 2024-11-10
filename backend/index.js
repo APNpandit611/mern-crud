@@ -12,7 +12,7 @@ const port = process.env.PORT || 3000;
 const _dirname = path.resolve();
 
 const corOption = {
-    origin: ["http://localhost:5174"],
+    origin: ["https://mern-crud-jprx.onrender.com"],
     credentials: true,
 };
 app.use(cors(corOption));

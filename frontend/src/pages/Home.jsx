@@ -15,7 +15,7 @@ const Home = () => {
             setLoading(true);
             try {
                 const res = await axios.get(
-                    "http://localhost:3005/product/get/all"
+                    "https://mern-crud-jprx.onrender.com/product/get/all"
                 );
                 setProducts(res.data.product);
             } catch (error) {

@@ -24,7 +24,7 @@ const CreateProduct = () => {
         setLoading(true);
         try {
             const res = await axios.post(
-                "http://localhost:3005/product/create",
+                "https://mern-crud-jprx.onrender.com/product/create",
                 input,
                 {
                     headers: {
